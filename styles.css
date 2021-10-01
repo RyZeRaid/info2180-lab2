@@ -8,7 +8,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 75% auto;
-    grid-template-rows: 15% auto 10%;
+    grid-template-rows: 25% auto 4%;
     grid-template-areas: 
         "header header"
         "article sidebar"
@@ -22,20 +22,30 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 40px;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 9%;
 }
 
 aside{
     grid-area: sidebar;
-    background-color: darkblue;
+    padding-right: 15%;
 }
 
 footer{
     grid-area: footer;
-    background-color: #c9c7c7;
+    background-color: #2C5282;
+}
+
+footer p {
+    color: #FFFFFF;
 }
 
 header img {
-    max-width: 10%;
+    max-width: 11%;
     border-radius: 100vh;
     margin: 2vh;
 }
@@ -54,15 +64,53 @@ header h1 {
 article h2 {
     font-size: 32px;
     color: #48BB78;
+    margin: 0;
+    padding: 0;
 }
 
 #date {
     color:  #718096;
 }
 
+#computer {
+    max-width: 45%;
+    float: right;
+}
+
+#online {
+    max-width: 30%;
+    float: left;
+}
+
 hr {
     margin: 0 -15px;
     border: 0;
     border-top: 1px solid #c9c7c7;
-
 }
+
+#Social h3, #Archives h3, #About h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Social h3, #Archives h3 {
+    color: #48BB78;
+}
+
+#About h3 {
+    color: #000000;
+}
+
+#About {
+    background-color: #E2E8F0;
+    padding: 10px;
+}
+
+a {
+    color: #4299E1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
